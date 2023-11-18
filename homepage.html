@@ -4,72 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="homepage.css">
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kenia&family=Poppins:wght@300&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+
+  <!--montezerra-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kenia&family=Montserrat:wght@100&family=Poppins:wght@300&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+
     <title>Homepage</title>
-
-    <style>
-      .navbar-brand img {
-          margin-left: 20px;
-          margin-top: 10px;
-      }
-      .navbar-nav {
-          margin: 0 auto;
-      }
-      .navbar-nav .nav-item {
-          text-align: center;
-      }
-      .navbar-nav .nav-link {
-          color: black;
-      }
-      .btn-get-quote {
-            border-radius: 50px; /* This makes the button pill-shaped */
-            background-color:#7963e0 ;
-            color: white;
-      }
-  </style>
-
-   
 </head>
-<body>
+
+<body class="bg-light">
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./logo borox.png" alt="Logo" width="90" height="24" class="d-inline-block align-text-top">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Experience</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">News</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-              </li>  
-            </ul>
-          </div>
-          <div class="ml-auto">
-            <button type="button" class="btn btn-pill btn-get-quote" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                Get a quote
+        <!--navigation bar-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="./logo borox.png" alt="Logo" width="90" height="24" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Experience</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>  
+              </ul>
+            </div>
+
+            <!--navbar button-->
+            <div class="ml-auto">
+              <button type="button" class="btn btn-pill btn-get-quote" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                  Get a quote
+              </button>
+          </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <!--home content-->
+        <div class="txt-img-container" style="margin-left: 20px; line-height: 2.5;">
+          <div class="txt-container">
+          <span style="color:#7963e0; font-weight: bold; font-size: larger;">Hello, My name is</span>
+          <br>
+          <h1 class="isa-style">Isabelle Ryal</h1>
+          <h3 class="isa-style" style="font-size: medium;">I'm A Web developer</h3>
+          <p class="text-wrap" style="line-height: 1.5; color: light;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et delectus tempore ad, dolor rerum voluptates nulla labore enim numquam alias.</p>
+          <button type="button" class="btn btn-custom">Hire Me</button>
         </div>
+          <div class="img-container">
+            <img src="./girl.png" class="girl" alt="">
+          </div>
         </div>
-      </nav>
-    </header>
-    <main>
+        <br>
+        <section>
+          <div class="container">
+            <span id="#mont">BEST IN SERVICE</span>
+            <h2>IT Industries we're offering</h2>
+
+          </div>
+        </section>
+    </main>
       
    
     <!--js link-->
