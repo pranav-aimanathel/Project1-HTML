@@ -33,7 +33,6 @@
 font-family: 'Poppins', sans-serif;
 font-family: 'Quicksand', sans-serif;
 font-weight: bold;
-font-size: 50px;
 }
 
     /*text and image flex part in the home page*/
@@ -59,12 +58,53 @@ font-size: 50px;
 .girl {
     max-width: 100%; /* Ensure the image doesn't exceed its container width */
     height: auto; /* Maintain the image's aspect ratio */
+    margin-top: 60px;
   }
 
   /*montserrat font*/
-  #mont {
+  .mont {
     font-family: 'Kenia', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Quicksand', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 100px;
   }
+
+  /*for the second part of homepage*/
+  .section {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px;
+            border-bottom: 1px solid #51505050;
+            padding-bottom: 5px;
+        }
+
+        .box {
+            /*border-right: 1px solid #515050;*/
+            padding: 20px;
+            width: 200px;
+        }
+
+        .box img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .num {
+            border-right: 1px solid #51505050;
+            font-size: 40px;
+            color:#7963e0;
+            opacity: 0.5;
+            font-weight: bold;
+            padding-right: 20px;
+        }
+
+        .people {
+            flex: 1; /* Take up remaining space */
+            text-align: left; /* Align content to the right */
+            padding-left: 20px; /* Add some space between text and image */
+            padding-right: 40px;
+            border-radius: 0.5px;
+            width: 100%;
+            height: 200px;
+        }
