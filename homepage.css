@@ -32,7 +32,7 @@
     font-family: 'Kenia', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Quicksand', sans-serif;
-font-weight: bold;
+font-weight: bolder;
 }
 
     /*text and image flex part in the home page*/
@@ -176,4 +176,53 @@ font-weight: bold;
             font-size: 13px;
             color: #777777;
           }
+
+          /* horizontal ul */
+          .hori-ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center; /* Center-align the list items horizontally */
+            align-items: center; /* Center-align vertically within the container */
+          
+          }
       
+          .hori-li {
+            padding: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+          }
+
+          /* hover to blue */
+          .hori-li:hover {
+            color: #7963e0; /* Change the font color to blue on hover */
+        }
+
+        /* the superscripts of images in portfolio */
+        .super {
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+            padding: 3px;
+            font-size: 12px;
+            margin-right: 5px;
+        }
+
+        .end-container {
+            display: flex;
+            flex-direction: row-reverse; /* Align children in reverse order (right to left) */
+            align-items: flex-start; /* Align items at the top vertically */
+            text-align: end;
+            position: absolute; /* Position the container absolutely */
+            top: 0;
+            right: 0;
+            padding: 10px; /* Add padding as needed */
+          }
+
+          .custom-card2 {
+            margin: 10px;
+          }
+        
