@@ -19,7 +19,8 @@
     <title>Homepage</title>
 </head>
 
-<body class="background-color= rgb(246 248 255 / var(--tw-bg-opacity))">
+<body class="background-color: rgb(246 248 255 / var(--tw-bg-opacity))">
+
     <header>
         <!--navigation bar-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="background-color: rgb(249, 249, 249);">
@@ -69,16 +70,16 @@
           <div class="txt-container">
           <span style="color:#7963e0; font-weight: bold; font-size: larger;">Hello, My name is</span>
           <br>
-          <h1 class="isa-style" style="font-size: 50px;">Isabelle Ryal</h1>
+          <h1 class="isa-style" style="font-size: 55px;">Isabelle Ryal</h1>
           <h2 class="isa-style" style="font-size: large; line-height: 1.5;">I'm A Web developer</h2>
           <p class="text-wrap" style="line-height: 1.5; color: light; opacity: 0.5;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et delectus tempore ad, dolor rerum voluptates nulla labore enim numquam alias.</p>
           <button type="button" class="btn btn-custom">Hire Me</button>
         </div>
           <div class="img-container">
-            <img src="./girl.png" class="girl" alt="">
+            <img src="./girl.png" style="max-width: 100%;" class="girl" alt="">
           </div>
         </div>
-        <img src="./hero-shape.png" alt="">
+        <img src="./hero-shape.png" style="max-width: 100%;" alt="">
       </div>
         
         <br>
@@ -172,7 +173,7 @@
 
       <!-- Experience -->
 <section class="container-fluid" style="background-color: #f6f8ff; position: relative;">
-  <img src="./bg-shape.png" alt="">
+  <img src="./bg-shape.png" style="max-width: 100%;" alt="">
 
   <div class="container" id="experience">
     <span class="center-container mont" style="opacity: 0.7;">QUALIFICATION</span>
@@ -181,7 +182,7 @@
 
     <!-- grid -->
     <!-- right part -->
-    <div class="container custom-flex">
+    <div class="container custom-flex" style="padding-bottom: 30px;">
       <!-- part right -->
       <div class="dived">
         <h2 class="isa-style" style="font-size: large;">Education</h2> <br>
@@ -241,6 +242,73 @@
   </div>
 </section>
 
+<!-- Portfolio -->
+
+<div class="container" style="margin-top: 40px;">
+  <span class="center-container mont edup" style="font-size: 14px;">PORTFOLIO</span>
+  <h2 class="isa-style" style="text-align: center;">My <span class="isa-style" style="color: #7963e0;">PORTFOLIO</span></h2>
+
+  <!-- list of nav -->
+  <ul class="hori-ul">
+    <li class="hori-li hori-li:hover">All</li>
+    <li class="hori-li hori-li:hover">Design</li>
+    <li class="hori-li hori-li:hover">Development</li>
+    <li class="hori-li hori-li:hover">Graphics</li>
+    <li class="hori-li hori-li:hover">Templates</li>
+  </ul>
+
+  <!-- the card grid -->
+  <div class="container custom-flex">
+    <div class="card text-bg-dark custom-card2">
+      <img src="./img-1.jpg" class="card-img rounded-image" alt="...">
+      <div class="card-img-overlay end-container">
+        <span class="super mont">3D Graphics</span>
+        <span class="super mont">Templates</span>
+      </div>
+    </div>
+
+    <div class="card text-bg-dark custom-card2">
+      <img src="./img-2.jpg" class="card-img rounded-image" alt="...">
+      <div class="card-img-overlay end-container">
+        <span class="super mont">Web Design</span>
+      </div>
+    </div>
+
+    <div class="card text-bg-dark custom-card2">
+      <img src="./img-3.jpg" class="card-img rounded-image" alt="...">
+      <div class="card-img-overlay end-container">
+        <span class="super mont">Web Design</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container custom-flex">
+  <div class="card text-bg-dark custom-card2">
+    <img src="./img-4.jpg" class="card-img rounded-image" alt="...">
+    <div class="card-img-overlay end-container">
+      <span class="super mont">Developement</span>
+    </div>
+  </div>
+
+  <div class="card text-bg-dark custom-card2">
+    <img src="./img-1.jpg" class="card-img rounded-image" alt="...">
+    <div class="card-img-overlay end-container">
+      <span class="super mont">Template</span>
+      <span class="super mont">Web Design</span>
+    </div>
+  </div>
+
+  <div class="card text-bg-dark custom-card2">
+    <img src="./img-2.jpg" class="card-img rounded-image" alt="...">
+    <div class="card-img-overlay end-container">
+      <span class="super mont">Developement</span>
+      <span class="super mont">3D Graphics</span>
+    </div>
+  </div>
+</div>
+</div>
+
     </main>
       
    
@@ -251,5 +319,3 @@
     <script src="/js/bootstrap.js"></script>
 </body>
 </html>
-
-<!-- #f6f8ff -->
