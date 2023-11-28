@@ -43,13 +43,13 @@
                   <a class="nav-link" href="#experience">Experience</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Portfolio</a>
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">News</a>
+                  <a class="nav-link" href="#news">News</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
+                  <a class="nav-link" href="#contact">Contact Us</a>
                 </li>  
               </ul>
             </div>
@@ -244,7 +244,7 @@
 
 <!-- Portfolio -->
 
-<div class="container" style="margin-top: 40px;">
+<div class="container" id="portfolio" style="margin-top: 40px;">
   <span class="center-container mont edup" style="font-size: 14px;">PORTFOLIO</span>
   <h2 class="isa-style" style="text-align: center;">My <span class="isa-style" style="color: #7963e0;">PORTFOLIO</span></h2>
 
@@ -283,7 +283,7 @@
   </div>
 </div>
 
-<div class="container custom-flex">
+<div class="container custom-flex" style="margin-bottom: 40px;">
   <div class="card text-bg-dark custom-card2">
     <img src="./img-4.jpg" class="card-img rounded-image" alt="...">
     <div class="card-img-overlay end-container">
@@ -309,7 +309,65 @@
 </div>
 </div>
 
-    </main>
+<!-- news page -->
+<div class="container-fluid" id="news" style="background-color: #f6f8ff;">
+  <img src="./bg-shape.png" style="max-width: 100%;" alt="">
+  <div class="container" style="margin-top: 50px;">
+    <span class="mont center-container edup">BLOGS</span>
+    <h2 class="isa-style" style="text-align: center;">Latest <span style="color: #7963e0;">NEWS</span></h2>
+  </div>
+</div>
+
+<!-- contact us page -->
+<div class="container" id="contact" style="margin-top: 50px;">
+  <span class="mont center-container edup">FORMS</span>
+  <h2 class="isa-style" style="text-align: center;">Get in <span style="color: #7963e0;">TOUCH</span></h2>
+</div>
+
+<div class="container" style="margin-top: 20px;  margin-bottom: 40px;">
+  <div class="row custom-row">
+    <!-- Left Column -->
+    <div class="col-md-6">
+      <div>
+        <input type="text" class="form-control" id="fullname" placeholder="Full Name">
+      </div>
+
+      <div>
+        <input type="email" class="form-control" id="email" placeholder="Email">
+      </div>
+
+      <div>
+        <input type="tel" class="form-control" id="number" placeholder="Phone">
+      </div>
+
+      <div>
+        <input type="text" class="form-control" id="subject" placeholder="Subject">
+      </div>
+    </div>
+    
+    <!-- Right Column -->
+    <div class="col-md-6">
+      <div class="mb-3">
+        <textarea class="form-control" style="height: 200px;" id="message" rows="5" placeholder="Message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-get-quote">Submit</button>
+    </div>
+  </div>
+</div>
+</main>
+
+<footer class="footer">
+  <div class="container custom-flex mont">
+    <div>
+      Copyright © Borox all rights reserved. Powered by Borox.
+    </div>
+    <div>
+      <a href="javascript:void(0)" style="text-decoration: none; margin-right: 20px;" class="pr-30 text-white hover:text-white">Privacy Policy</a>
+      <a href="javascript:void(0)" style="text-decoration: none;" class="text-white hover:text-white">Terms and Conditions</a>
+    </div>
+  </div>
+</footer>
+
       
    
     <!--js link-->
