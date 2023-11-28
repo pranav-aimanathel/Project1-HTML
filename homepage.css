@@ -189,8 +189,8 @@ font-weight: bolder;
           }
       
           .hori-li {
-            padding: 10px;
             text-align: center;
+            padding: 10px;
             text-transform: uppercase;
             font-size: 14px;
             font-weight: 600;
@@ -226,3 +226,38 @@ font-weight: bolder;
             margin: 10px;
           }
         
+          /* the card on hover */
+          .hovercard {
+            background-color: #000000;
+            opacity: 0.5;
+            color: white;
+            
+          }
+
+          /* row in contact */
+          .custom-row .form-control {
+            height: 65px;
+          }
+
+          /* Custom styles for placeholder text */
+        .custom-row .col-md-6 .form-control::placeholder,
+        .custom-row .col-md-6 textarea::placeholder {
+          font-size: 17px; /* Adjust the font size */
+          opacity: 0.7;
+          color: #999;    /* Adjust the color */
+          padding: 6px 12px;   /* Adjust the padding */
+        /* Add any other styles you want to customize */
+}
+
+/* footer  */
+.footer{
+  background-color: #000000;
+  color: white;
+  padding: 30px;
+  font-size: 13px;
+}
+
+/* footer links */
+.text-white {
+  color: white;
+}
