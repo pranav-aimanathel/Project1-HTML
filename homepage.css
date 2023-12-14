@@ -13,6 +13,7 @@
     color: black;
 }
 
+
     /*button navbar*/
 .btn-get-quote {
       border-radius: 50px; /* This makes the button pill-shaped */
@@ -45,6 +46,7 @@ font-weight: bolder;
 .txt-container {
     flex: 1;
     padding-left: 40px;
+    margin-top: 40px;
 }
 
     /*image flex part in the home page*/
@@ -60,6 +62,13 @@ font-weight: bolder;
     height: auto; /* Maintain the image's aspect ratio */
     margin-top: 60px;
   }
+
+  /* to hide the girl */
+  @media (max-width: 770px) {
+    .img-container {
+        display: none;
+    }
+}
 
   /*montserrat font*/
   .mont {
@@ -79,10 +88,19 @@ font-weight: bolder;
             padding-bottom: 5px;
         }
 
+        /* to allign vertically when screen get smaller */
+        @media (max-width: 1020px) {
+          .section {
+              flex-direction: column; /* Stack items vertically */
+              align-items: center; /* Center-align items horizontally */
+              text-align: center; /* Center-align text */
+          }
+      }
+
         .box {
             /*border-right: 1px solid #515050;*/
             padding: 20px;
-            width: 200px;
+            width: 100%;
         }
 
         .box img {
@@ -112,6 +130,24 @@ font-weight: bolder;
             justify-content: space-between;
             padding: 20px;
         }
+
+        /* to align about us vertically on responsiveness*/
+        @media (max-width: 1020px) {
+          #about {
+              flex-direction: column; /* Stack items vertically */
+              align-items: center; /* Center-align items horizontally */
+              text-align: left; /* Center-align text */
+          }
+      }
+
+      /* to align qualifications vertically on responsiveness  */
+      @media (max-width: 1020px) {
+        #experience {
+            flex-direction: column; /* Stack items vertically */
+            align-items: left; /* Center-align items horizontally */
+            text-align: left; /* Center-align text */
+        }
+    }
 
         .rounded-image {
             flex: 1;
@@ -260,4 +296,21 @@ font-weight: bolder;
 /* footer links */
 .text-white {
   color: white;
+}
+
+/* to skew the image */
+.card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.card:hover img {
+  transform: rotate(-12deg) scale(1.2);
 }
