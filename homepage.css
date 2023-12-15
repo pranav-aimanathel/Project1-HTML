@@ -194,8 +194,20 @@ font-weight: bolder;
           .round {
             border-radius: 20px;
             line-height: 2;
+            position: relative;
             
           }
+
+          /* adding the arrow */
+          /* .pointer-image {
+            position: absolute;
+            left: -20px; 
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            height: 30px;
+            width: 10px;
+          } */
 
           /* style for headings in the education */
           .eduhead {
@@ -235,6 +247,24 @@ font-weight: bolder;
           /* hover to blue */
           .hori-li:hover {
             color: #7963e0; /* Change the font color to blue on hover */
+        }
+
+        /* to wrap the images according to screen width */
+        @media (max-width: 1020px) {
+          #port {
+            flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+          }
+        }
+
+        #crd {
+          width: calc(50% - 20px); /* Two cards in a row with 20px spacing */
+          margin-bottom: 20px; /* Adjust as needed */
+        }
+      
+        @media (max-width: 750px) {
+          #crd {
+            width: calc(100% - 20px); /* Full width for one card with 20px spacing */
+          }
         }
 
         /* the superscripts of images in portfolio */
@@ -299,18 +329,18 @@ font-weight: bolder;
 }
 
 /* to skew the image */
-.card {
+.card2 {
   position: relative;
   overflow: hidden;
   transition: transform 0.3s;
 }
 
-.card img {
+.card2-img {
   width: 100%;
   height: auto;
   transition: transform 0.3s;
 }
 
-.card:hover img {
+.card2:hover img {
   transform: rotate(-12deg) scale(1.2);
 }
