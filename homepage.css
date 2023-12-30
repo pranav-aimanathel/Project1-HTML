@@ -12,6 +12,9 @@
 .navbar-nav .nav-link {
     color: black;
 }
+.navbar {
+  width: 100%;
+}
 
 
     /*button navbar*/
@@ -63,12 +66,6 @@ font-weight: bolder;
     margin-top: 60px;
   }
 
-  /* to hide the girl */
-  @media (max-width: 770px) {
-    .img-container {
-        display: none;
-    }
-}
 
   /*montserrat font*/
   .mont {
@@ -88,14 +85,13 @@ font-weight: bolder;
             padding-bottom: 5px;
         }
 
-        /* to allign vertically when screen get smaller */
-        @media (max-width: 1020px) {
-          .section {
-              flex-direction: column; /* Stack items vertically */
-              align-items: center; /* Center-align items horizontally */
-              text-align: center; /* Center-align text */
-          }
-      }
+
+/* Apply the pointer image to elements with class 'experience-card' */
+.experience-card {
+  position: relative; /* Establish positioning context for the pointer */
+  padding-left: 30px; /* Add space for the pointer to the left of each card */
+}
+
 
         .box {
             /*border-right: 1px solid #515050;*/
@@ -130,24 +126,6 @@ font-weight: bolder;
             justify-content: space-between;
             padding: 20px;
         }
-
-        /* to align about us vertically on responsiveness*/
-        @media (max-width: 1020px) {
-          #about {
-              flex-direction: column; /* Stack items vertically */
-              align-items: center; /* Center-align items horizontally */
-              text-align: left; /* Center-align text */
-          }
-      }
-
-      /* to align qualifications vertically on responsiveness  */
-      @media (max-width: 1020px) {
-        #experience {
-            flex-direction: column; /* Stack items vertically */
-            align-items: left; /* Center-align items horizontally */
-            text-align: left; /* Center-align text */
-        }
-    }
 
         .rounded-image {
             flex: 1;
@@ -198,16 +176,14 @@ font-weight: bolder;
             
           }
 
-          /* adding the arrow */
-          /* .pointer-image {
+          /* arrow image */
+          .arrow-image {
             position: absolute;
-            left: -20px; 
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 1;
-            height: 30px;
-            width: 10px;
-          } */
+            width: 32px;
+            height: 20px;
+            top: 80px;
+            left: -33px;
+          }
 
           /* style for headings in the education */
           .eduhead {
@@ -249,24 +225,6 @@ font-weight: bolder;
             color: #7963e0; /* Change the font color to blue on hover */
         }
 
-        /* to wrap the images according to screen width */
-        @media (max-width: 1020px) {
-          #port {
-            flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
-          }
-        }
-
-        #crd {
-          width: calc(50% - 20px); /* Two cards in a row with 20px spacing */
-          margin-bottom: 20px; /* Adjust as needed */
-        }
-      
-        @media (max-width: 750px) {
-          #crd {
-            width: calc(100% - 20px); /* Full width for one card with 20px spacing */
-          }
-        }
-
         /* the superscripts of images in portfolio */
         .super {
             border-radius: 20px;
@@ -287,6 +245,7 @@ font-weight: bolder;
             right: 0;
             padding: 10px; /* Add padding as needed */
           }
+          
 
           .custom-card2 {
             margin: 10px;
@@ -344,3 +303,117 @@ font-weight: bolder;
 .card2:hover img {
   transform: rotate(-12deg) scale(1.2);
 }
+
+/* swiper carousel */
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 350px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+swiper-slide {
+  width: 80%;
+}
+
+.swiper-overlay {
+  z-index: 1;
+  height: 400px;
+  width: 800px;
+  position: absolute;
+  top: 150px;
+}
+
+.btn-nobg-blue {
+  background-color:none;
+  color: #7963e0;
+}
+
+ @media (max-width: 1020px) {
+  #man {
+    display: none;
+  }
+  #news-container {
+    display: block;
+    height: 700px;
+  }
+  #port {
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+  }
+  #about {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align items horizontally */
+    text-align: left; /* Center-align text */
+}
+#experience {
+  flex-direction: column; /* Stack items vertically */
+  align-items: left; /* Center-align items horizontally */
+  text-align: left; /* Center-align text */
+}
+#crd {
+  width: calc(50% - 20px); /* Two cards in a row with 20px spacing */
+  margin-bottom: 20px; /* Adjust as needed */
+} 
+
+/* to allign vertically when screen get smaller */
+.section {
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center-align items horizontally */
+  text-align: center; /* Center-align text */
+}
+#quote {
+  display: none;
+}
+#home {
+  height: 600px;
+}
+}
+
+
+
+@media (max-width: 600px) {
+  #swipe{
+    width: 100%;
+  }
+  #swipecon{
+    width: 95%;
+  }
+  swiper-slide {
+    width: 100%;
+  }
+  
+  #navv {
+    max-width: 100%;
+  }
+  #crd {
+    width: calc(100% - 20px); /* Full width for one card with 20px spacing */
+  }
+  .img-container {
+    display: none;
+}
+
+.txt-container {
+  text-align: center;
+  align-items: center;
+}
+}
+
